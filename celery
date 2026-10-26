@@ -1,0 +1,3 @@
+python -m celery -A publisher worker --loglevel=info -P solo
+python -m celery -A publisher beat --loglevel=info
+python consumer.py
